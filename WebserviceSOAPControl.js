@@ -260,5 +260,5 @@ render() {
 `
 }
 }
-const elementName = 'onc-webservice- request-soap';
+const elementName = 'onc-webservice-request-soap';
 customElements.define(elementName, OncWebServiceRequestSoap);
