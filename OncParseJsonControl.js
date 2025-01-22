@@ -143,7 +143,7 @@ export class OncParseJson extends LitElement {
     }
     updated(changedProperties) {
         super.updated(changedProperties);
-        if (changedProperties.has('jsonResponse')) {
+        if (changedProperties.has('jsonResponse') || changedProperties.has('jsonPath')) {
             this.getProperty();
         }
     }
