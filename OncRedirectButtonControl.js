@@ -74,7 +74,6 @@ export class OncRedirectButton extends LitElement {
     super();
     this.isPluginLoaded = false;
     this.redirectUrl = "";
-    this.buttonLabel = "Cancel";
   }
 
   render() {
@@ -82,6 +81,7 @@ export class OncRedirectButton extends LitElement {
       <div>
         <button
           class="form-control redirect-button"
+          part="redirectButton"
           @click="${this.handleButtonClick}"
         >
           ${this.buttonLabel}
